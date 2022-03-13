@@ -2,7 +2,8 @@ body{
     background-image: url(images/pattern-background-desktop.svg);
     /* background-color: lightblue; */
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
+    background-position: top;
 }
 .card{
     margin: auto;
@@ -21,7 +22,7 @@ body{
     width: 350px;
 }
 .content{
-    padding: 1.5rem 2rem;
+    padding: 1rem 2rem;
 }
 h1{
     text-align: center;
@@ -36,8 +37,12 @@ p{
     color: hsl(224, 23%, 55%);
     font-size: 14px;
 }
+.music-icon{
+    margin-top: 10px;
+    padding-left: 15px;
+}
 h2{
-    display: inline;
+    display: inline-block;
     font-family: 'Red Hat Display', sans-serif;
     color: hsl(223, 47%, 23%);
     font-weight: 900;
@@ -53,24 +58,44 @@ h2{
     font-size: 14px;
     vertical-align: bottom;
     margin-left: -85px;
-    margin-right: 90px;
+    margin-right: 60px;
+    
 }
 a{
     display: inline-block;
     vertical-align: top;
-    margin-top: 10px;
+    margin-top: 20px;
     font-family: 'Red Hat Display', sans-serif;
     font-size: 14px;
+    color: #3a04ff;
+}
+a:hover{
+    color: #8564ff;
+    cursor: pointer;
+    text-decoration: none;
 }
 button{
     display: block;
     text-align: center;
     margin: auto;
     margin-top: 1rem;
-    background-color: darkblue;
-    padding: 10px 70px;
-    border-radius: 5px;
+    background-color: #3a04ff;
+    padding: 10px 75px;
+    border-radius: 8px;
     color: white;
     font-family: 'Red Hat Display', sans-serif;
     font-weight: 700;
+    border: none;
+}
+button:hover{
+    background-color: #8f70ff;
+    cursor: pointer;
+}
+.white-button{
+    background-color: white;
+    color: hsl(224, 23%, 55%);
+}
+.white-button:hover{
+    color : hsl(222, 71%, 9%);
+    background-color: white;
 }
